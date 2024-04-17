@@ -1,0 +1,63 @@
+h1 {
+  text-align: center;
+}
+
+#pokemon-gallery {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.pokemon-card {
+    box-sizing: border-box;
+    border: 1px  purple;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 10px 2px purple;
+    margin: 30px 40px;
+    padding: 30px 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal {
+    display: none; /* 默认隐藏 */
+    position: fixed; /* 固定定位 */
+    z-index: 1; /* 放在最顶层 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* 允许滚动 */
+    background-color: rgba(0,0,0,0.4); /* 半透明黑色背景 */
+}
+
+.modal-content {
+    background-color: #fefefe; /* 白色背景 */
+    margin: 15% auto; /* 居中显示 */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* 设置模态框宽度 */
+    max-width: 600px; /* 最大宽度 */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 水平居中 */
+}
+
+#load-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: purple; /* 绿色 */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#load-more:hover {
+  background-color: #594bb0; /* 更深的绿色 */
+}
